@@ -1,0 +1,470 @@
+body {
+	font-family: 'Lato', sans-serif;
+    font-weight: 400;
+	font-size: 16px;
+	margin: 0;
+	padding: 0; 
+}
+
+#page { 
+	margin: 0 auto; 
+	position: relative;
+}
+
+
+h1 {
+	margin: 0 0 1em 0;
+	font-size: 2.4em;
+}
+
+h3 {
+	margin: 0 0 .5em 0; 
+	font-size: 1.3em;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+
+/* Header */
+
+header {
+	height: 220px;
+	background: #00A6FF;
+	position: relative; 
+}
+
+header h1.quote {
+	padding-top: 50px;
+	color: #fff;
+}
+
+header p.credit {
+	color: #fff;
+}
+
+header a.logo {
+	z-index:1;
+	position: absolute;
+	width: 160px;
+	height: 40px;
+	background: url(../Images/logo.png) no-repeat 0 0;
+	background-size: contain;
+	top: -10px;
+}
+
+/*Content section*/
+
+section.main {
+	margin-top: 20px; 
+	margin-bottom: 30px;
+	margin-left: 90px;
+	margin-right: 100px;
+	padding: 0;
+}
+
+section.main aside {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+section.main .content {
+	margin: 10px;
+	padding: 85px;
+}
+
+
+section.main .content img {
+    height: 250px;
+    width: 400px;
+}
+
+
+section.main aside p {
+	color: #8190A5
+}
+
+
+/*Footer*/
+footer {
+    clear: both;
+    position: relative;
+    height: 20px;
+    margin-top: -40px;
+	color: #fff;
+	background-color: #1E1E1E;
+	margin-top: auto;
+	padding: 1rem;
+	text-align: right;
+}
+
+
+
+/*Navigation*/
+
+nav {
+	background-color: #1E1E1E;
+	position: absolute; 
+	top: -20px;
+	left: 0px;
+	padding: 0 0 0 0;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	 overflow: hidden;
+	padding-left: 100px;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+	padding: 15px 20px;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+
+nav ul li a:hover {
+	background-color: #00A6FF;
+}
+
+nav ul li a.active {
+	background-color: #00A6FF;
+}
+
+nav ul li {
+	float: left;
+}
+
+
+
+
+/* University page*/
+.bluecont {
+	background-color: #00A6FF;
+	width: 40%;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 15px 10px;
+	border-radius: 25px;
+	float: left;
+margin-left: 50px;
+}
+
+.bluecont h3{
+	color: #fff;
+}
+
+.bluecont a {
+	text-decoration: none;
+	color: #47525E;
+}
+
+
+/*Jobs page*/
+.jobName {
+	background-color: #fff;
+	padding: 10px;
+	margin: 0px;
+}
+
+.jobCon {
+	background-color: #00A6FF;
+	width: 50%;
+	padding: 20px;
+	margin: 20px auto;
+}
+
+.jobCon h4{
+	color: #fff;
+	overflow: auto;
+}
+
+.jobCon p{
+	background-color: #fff;
+	padding: 10px;
+	width: 400px;
+	overflow: auto;
+}
+
+input[type=text] {
+    width: 140px;
+    box-sizing: border-box;
+    border: 2px solid #00A6FF;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px ;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	margin: 10px;
+
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+
+
+/*Statistics page*/
+
+.accordionSection {
+    background-color: #00A6FF;
+    color: #1E1E1E;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordionSection:hover {
+    background-color: #34B6FC;
+}
+
+.accordionSection:after {
+    content: '\002B';
+    color: #1E1E1E;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+#contentstat {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 2.0em;
+	}
+	
+	section.main {
+		margin-left: 80px;
+		margin-top: 20px; 
+		margin-bottom: 30px;
+		margin-right: 200px;
+		padding: 0;
+	}
+	
+	section.main .content img {
+
+		height: 210px;
+		width: 350px;
+	}
+
+	section.main .content {
+		margin: 5px;
+		padding: 35px;
+	}
+	
+	.jobCon {
+		background-color: #00A6FF;
+		width: 100%;
+		padding: 20px;
+		margin: 20px auto;
+	}
+	
+	.jobCon p{
+		background-color: #fff;
+		padding: 10px;
+		width: 90%;
+	}
+	.bluecont {
+		background-color: #00A6FF;
+		width: 30%;
+		text-align: center;
+		margin: 20px;
+		padding: 15px;
+		padding-left: 0px;
+		border-radius: 25px;
+		float: left;
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 825px) {
+	h1 {
+		font-size: 1.8em;
+	}
+	
+	section.main {
+		margin-left: 30px;
+		margin-top: 20px; 
+		margin-bottom: 30px;
+		margin-right: 200px;
+		padding: 0;
+	}
+	
+	section.main .content img {
+
+		height: 160px;
+		width: 300px;
+	}
+	
+	.bluecont {
+
+		background-color: #00A6FF;
+		/*width: 400px;*/
+		width: 80%;
+		text-align: center;
+		margin: 20px;
+	
+		border-radius: 25px;
+		float: center;
+		margin-left: 50px;
+	}
+	
+	.bluecont h3{
+		font-size: 1.2em;
+	}
+	.bluecont a{
+		font-size: 1.0em;
+	}
+	
+	
+	.jobCon {
+		background-color: #00A6FF;
+		width: 100%;
+		padding: 20px;
+		margin: 20px auto;
+	}
+	
+	.jobCon p{
+		background-color: #fff;
+		padding: 10px;
+		overflow: auto;
+	}
+	
+}
+
+@media screen and (max-width: 650px) {
+	h1 {
+		font-size: 1.0em;
+	}
+	
+	header {
+		background-color: #fff;
+	}
+	
+	section.main {
+		
+		margin: auto;
+		padding: 0;
+
+	}
+
+	section.main aside {
+		width: 100%;
+		
+		text-align: left;
+	}
+
+
+
+	section.main .content img {
+	margin: auto;
+		height: 100px;
+		width: 200px;
+		
+	}
+	
+	nav {
+		background-color: #1E1E1E;
+		position: absolute; 
+		
+		left: 0px;
+		padding: 0 0 0 0;
+		width: 100%;
+		
+	}
+
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0px;
+		
+		padding-left: 0px;
+	}
+
+
+
+
+
+	nav ul li a:hover {
+		background-color: #00A6FF;
+		width:100%;
+	}
+
+	nav ul li a.active {
+		background-color: #00A6FF;
+		width:100%;
+	}
+
+
+	nav ul li a {
+		display: block;
+		color: #fff;
+		width:100%;
+		text-decoration: none;
+		font-size: 1.0em;
+	}	
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		text-align: center;
+	}
+
+	header a.logo {
+		display: none;
+	}
+	
+	.bluecont {
+		background-color: #00A6FF;
+		width: 80%;
+		text-align: center;
+		margin: 20px;
+		border-radius: 25px;
+		float: center;
+	}
+	
+	.bluecont h3{
+		font-size: 1.0em;
+	}
+	.bluecont a{
+		font-size: 0.8em;
+	}
+	
+	.jobCon {
+		background-color: #00A6FF;
+		width: 80%;
+		padding: 20px;
+		margin: 20px auto;
+	}
+	
+	.jobCon p{
+		background-color: #fff;
+		padding: 10px;
+		overflow: auto;
+	}
+	
+}
+
